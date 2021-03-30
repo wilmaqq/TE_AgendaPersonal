@@ -74,7 +74,10 @@ public class MainServlet extends HttpServlet {
         ArrayList<Agenda> lista=(ArrayList<Agenda>)ses.getAttribute("listaper");
         Agenda objper=new Agenda();
         
-        objper.setId(id);        
+        objper.setId(id);  
+        objper.setNombres(request.getParameter("nombres"));
+        objper.setApellidos(request.getParameter("apellidos"));
+        objper.setEdad(Integer.parseInt(request.getParameter("edad")));
         objper.setHora(request.getParameter("hora"));
         objper.setActividad(request.getParameter("actividad"));
         objper.setEstado(request.getParameter("estado"));

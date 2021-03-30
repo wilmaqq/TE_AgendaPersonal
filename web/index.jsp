@@ -30,6 +30,9 @@
                     <table class="table">
                         <tr>
                             <th>Id</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Edad</th>
                             <th>Hora</th>
                             <th>Actividad</th>
                             <th>Completado</th>
@@ -43,6 +46,9 @@
                         %>
                         <tr>
                             <td><%= item.getId() %></td>
+                            <td><%= item.getNombres() %></td>
+                            <td><%= item.getApellidos() %></td>
+                            <td><%= item.getEdad() %></td>
                             <td><%= item.getHora() %></td>
                             <td><%= item.getActividad() %></td>                            
                             <td><%= item.getEstado() %></td>

@@ -5,8 +5,13 @@ package com.emergentes.modelo;
  * @author YURIKIRA105
  */
 
+
+
 public class Agenda {
     private int id;
+    private String nombres;
+    private String apellidos;
+    private int edad;
     private String hora;
     private String actividad;
     private String estado;
@@ -17,6 +22,9 @@ public class Agenda {
         hora = "";
         actividad = "";
         estado = "";
+        nombres="";
+        apellidos="";
+        edad=0;
     }
 
     public int getId() {
@@ -25,6 +33,29 @@ public class Agenda {
 
     public void setId(int id) {
         this.id = id;
+    }
+    public String getNombres() {
+        return nombres;
+    }
+
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
     public String getHora() {

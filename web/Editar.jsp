@@ -20,30 +20,26 @@
         <h1>Registro de Actividades</h1>
         <form action="MainServlet" method="post">
             <table>
-                <%
-                if(reg.getId()!=0)
-                {
-                %>
+                
                 <tr>
-
                     <td>ID</td>
                     <td>
                         <input type="text" name="id" value="<%= reg.getId()%>" size="2" readonly>
                     </td>
                 </tr>                
-                <%
-                }
-                else
-                {
-                %>
-                <tr>
-                    <td>ID</td>
-                    <td><input type=hidden name="id" value="<%= reg.getId()%>"></td>
-                </tr> 
                 
-                <%
-                }
-                %>
+                <tr>
+                    <td>Nombres</td>
+                    <td><input type="text" name="nombres" value="<%= reg.getNombres() %>"></td>
+                </tr>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input type="text" name="apellidos" value="<%= reg.getApellidos() %>"></td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td><input type="number" name="edad" value="<%= reg.getEdad() %>" size="3"</td>
+                </tr>
     
                 <tr>
                     <td>HORA</td>
