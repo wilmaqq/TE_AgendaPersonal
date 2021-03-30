@@ -43,7 +43,7 @@ public class MainServlet extends HttpServlet {
                objper=lista.get(pos);
                //Enviar para edicion
                request.setAttribute("miobjper", objper);
-               request.getRequestDispatcher("editar.jsp").forward(request, response);
+               request.getRequestDispatcher("Editar.jsp").forward(request, response);
                break;
                
            case "eliminar":
